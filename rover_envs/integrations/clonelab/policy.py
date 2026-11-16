@@ -2,15 +2,14 @@ from __future__ import annotations
 
 import importlib
 import json
+import logging
 from pathlib import Path
 from typing import Any
 
 import torch
-import logging
-
-
 
 logger = logging.getLogger(__name__)
+
 
 DEFAULT_ACTOR_CONFIG: dict[str, Any] = {
     "proprioception_channels": 3,
